@@ -1,0 +1,100 @@
+/* --- NAVBAR --- */
+
+.navbar>.container .navbar-brand {
+    color: @primary-color;
+    font-size: 24px;
+    margin: 8px 0;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+    background-color: @secondary-color;
+}
+
+/* --- HEADINGS --- */
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    color: @primary-color;
+}
+
+/* --- LINKS --- */
+
+a {
+    color: @secondary-color;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+/* --- POST --- */
+
+.entry-meta .fa {
+    font-size: 14px;
+    margin-right: 3px;
+    color: @primary-color;
+}
+
+/* --- BUTTON --- */
+
+.btn-default, .label-default {
+    background-color: @primary-color;
+    border-color: @primary-color;
+}
+
+.btn.btn-default.read-more {
+    float: right;
+    border: 1px solid #E8E8E8;
+    color: @primary-color;
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.btn.btn-default.read-more:hover {
+    color: #FFF;
+    background-color: @secondary-color;
+}
+
+#image-navigation .nav-next a:hover, #image-navigation .nav-previous a:hover, .btn-default.active, .btn-default:active, .btn-default:focus, .btn-default:hover, .label-default[href]:focus, .label-default[href]:hover {
+    background-color: @secondary-color;
+    border-color: @secondary-color;
+}
+
+/* --- PAGINATION --- */
+
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: @primary-color;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #E8E8E8;
+}
+
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+    z-index: 3;
+    color: #fff;
+    background-color: @secondary-color;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: @secondary-color;
+    border-color: #E8E8E8;
+}
+
+.scroll-to-top:hover {
+    background: @primary-color;
+    opacity: .8;
+}
+
+.tab-content #messages li:before {
+    font-family: fontawesome;
+    float: left;
+    padding-right: 10px;
+    font-size: 20px;
+    color: @primary-color;
+}
