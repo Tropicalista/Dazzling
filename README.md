@@ -1,4 +1,4 @@
 # Dazzling
 Dazzling theme for ContentBox
 
-![alt tag](https://raw.github.com/username/projectname/branch/path/to/img.png)
+![dazzling theme preview](https://github.com/Tropicalista/Dazzling/blob/master/screenshot.png)
