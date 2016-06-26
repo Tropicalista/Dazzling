@@ -69,7 +69,7 @@
 		<!--- 					JAVASCRIPT														--->
 		<!--- ********************************************************************************* --->
 		<!-- injector:js -->
-		<link rel="stylesheet" href="#cb.themeRoot()#/includes/css/themes/#lcase( cb.themeSetting( 'cbDazzlingTheme', 'Default' ))#.css?v=1" />
+		<script src="#cb.themeRoot()#/includes/js/0e06323b.theme.min.js"></script>
 		<!-- endinjector -->
 
 		<!--- ContentBoxEvent --->
