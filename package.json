@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Dazzling Theme",
   "main": "Gruntfile.js",
+  "location" : "https://github.com/Tropicalista/Dazzling/archive/master.zip",
   "private": "true",
   "devDependencies": {
     "grunt": "^0.4.5",

@@ -65,6 +65,8 @@
 		<link rel="stylesheet" href="#cb.themeRoot()#/includes/css/39daefdb.theme.min.css">
 		<!-- endinjector -->
 
+		<link rel="stylesheet" href="#cb.themeRoot()#/includes/css/themes/#lcase( cb.themeSetting( 'cbDazzlingTheme', 'Default' ))#.css?v=1" />
+
 		<!--- ********************************************************************************* --->
 		<!--- 					JAVASCRIPT														--->
 		<!--- ********************************************************************************* --->
