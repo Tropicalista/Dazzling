@@ -70,15 +70,14 @@
                 <!-- footer-nav -->
                 <nav role="navigation" class="col-md-6">
                     <ul id="menu-flat-footer" class="nav footer-nav clearfix">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="privacy.html">Privacy</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about">About</a></li>
+                        <li><a href="privacy">Privacy</a></li>
+                        <li><a href="contact">Contact</a></li>
                     </ul>
                 </nav>
 
                 <div class="copyright col-md-6">
-                    Copyright &copy; #cb.siteName()#.  All rights reserved - Powered by 
-                    <a href="index.html">ContentBox v#cb.getContentBoxVersion()#</a>
+                    #cb.themeSetting( 'footerText' )#
                 </div>
 
             </div>

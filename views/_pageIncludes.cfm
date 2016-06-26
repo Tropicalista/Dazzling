@@ -6,8 +6,8 @@
 
 		<!--- Site Title --->
 		<title>
-		<cfif cb.isEntryView()>
-			#cb.getCurrentEntry().getTitle()#
+		<cfif cb.isPageView()>
+			#cb.getCurrentPage().getTitle()#
 		<cfelse>
 			#cb.siteName()# - #cb.siteTagLine()#
 		</cfif>
@@ -16,19 +16,19 @@
 		<!--- ********************************************************************************* --->
 		<!--- 					META TAGS														--->
 		<!--- ********************************************************************************* --->
-		<meta name="generator" 	 	content="ContentBox powered by ColdBox" />
-		<meta name="robots" 	 	content="index,follow" />
 		<meta name="viewport" 		content="width=device-width, initial-scale=1">
 		<meta charset="utf-8" /> 
 
-		<!--- Meta per page or index --->
-		<cfif cb.isEntryView() AND len( cb.getCurrentEntry().getHTMLDescription() )>
-			<meta name="description" content="#cb.getCurrentEntry().getHTMLDescription()#" />
+		<!--- Meta Description By Page or By Site --->
+		<cfif cb.isPageView() AND len( cb.getCurrentPage().getHTMLDescription() )>
+			<meta name="description" content="#cb.getCurrentPage().getHTMLDescription()#" />
 		<cfelse>
 			<meta name="description" content="#HTMLEditFormat( cb.siteDescription() )#" />
 		</cfif>
-		<cfif cb.isEntryView() AND len(cb.getCurrentEntry().getHTMLKeywords())>
-			<meta name="keywords" 	 content="#cb.getCurrentEntry().getHTMLKeywords()#" />
+
+		<!--- Meta Keywords By Page or By Site --->
+		<cfif cb.isPageView() AND len( cb.getCurrentPage().getHTMLKeywords() )>
+			<meta name="keywords" 	 content="#cb.getCurrentPage().getHTMLKeywords()#" />
 		<cfelse>
 			<meta name="keywords" 	 content="#cb.siteKeywords()#" />
 		</cfif>
@@ -69,7 +69,7 @@
 		<!--- 					JAVASCRIPT														--->
 		<!--- ********************************************************************************* --->
 		<!-- injector:js -->
-		<script src="#cb.themeRoot()#/includes/js/0e06323b.theme.min.js"></script>
+		<link rel="stylesheet" href="#cb.themeRoot()#/includes/css/themes/#lcase( cb.themeSetting( 'cbDazzlingTheme', 'Default' ))#.css?v=1" />
 		<!-- endinjector -->
 
 		<!--- ContentBoxEvent --->

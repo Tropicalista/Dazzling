@@ -24,8 +24,6 @@
 		<!--- ********************************************************************************* --->
 		<!--- 					META TAGS														--->
 		<!--- ********************************************************************************* --->
-		<meta name="generator" 	 	content="ContentBox powered by ColdBox" />
-		<meta name="robots" 	 	content="index,follow" />
 		<meta name="viewport" 		content="width=device-width, initial-scale=1">
 		<meta charset="utf-8" /> 
 
@@ -73,7 +71,7 @@
 		<link rel="stylesheet" href="#cb.themeRoot()#/includes/css/39daefdb.theme.min.css">
 		<!-- endinjector -->
 
-		<link rel="stylesheet" href="#cb.themeRoot()#/includes/css/themes/#lcase( cb.themeSetting( 'cbDazzlingTheme', 'default' ))#.css?v=1" />
+		<link rel="stylesheet" href="#cb.themeRoot()#/includes/css/themes/#lcase( cb.themeSetting( 'cbDazzlingTheme', 'Default' ))#.css?v=1" />
 
 		<!--- ********************************************************************************* --->
 		<!--- 					JAVASCRIPT														--->
