@@ -19,7 +19,8 @@
 
 
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
-					<ul class="nav navbar-nav">
+					#cb.widget( "menu", {slug="topBar"} )#
+					<!---<ul class="nav navbar-nav">
 						<cfset menuData = cb.rootMenu( type="data", levels="2" )>
 
 						<!--- Iterate and build pages --->
@@ -46,7 +47,7 @@
 								<a href="#cb.linkBlog()#">Blog</a>
 							</li>
 						</cfif>
-					</ul>
+					</ul>--->
 				</div>
 
 		</div>

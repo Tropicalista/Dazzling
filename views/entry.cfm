@@ -13,7 +13,7 @@
                 <span class="">
                     <i class="fa fa-user"></i>
                     <span class="author vcard">
-                        #prc.entry.getAuthor().getName()#
+                        #prc.entry.getAuthor().getUsername()#
                     </span>
                 </span>
                 <span class="cat-links"><i class="fa fa-folder-open-o"></i>

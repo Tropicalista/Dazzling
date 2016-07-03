@@ -26,12 +26,9 @@
 	                        <span class="">
 	                            <i class="fa fa-user"></i>
 	                            <span class="author vcard">
-	                                #prc.page.getAuthor().getName()#
+	                                #prc.page.getAuthor().getUsername()#
 	                            </span>
-	                        </span>
-	                        <span class="cat-links"><i class="fa fa-folder-open-o"></i>
-	                            #cb.quickCategoryLinks(prc.page)#            
-	                        </span>                        
+	                        </span>                       
 	                    </div>
 	                </header>
 	                <div class="entry-content">
