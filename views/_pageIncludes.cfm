@@ -6,11 +6,11 @@
 
 		<!--- Site Title --->
 		<title>
-		<cfif cb.isEntryView()>
-			#cb.getCurrentEntry().getTitle()#
-		<cfelse>
-			#cb.siteName()# - #cb.siteTagLine()#
-		</cfif>
+			<cfif cb.isPageView()>
+				#cb.getCurrentPage().getTitle()#
+			<cfelse>
+				#cb.siteName()# - #cb.siteTagLine()#
+			</cfif>
 		</title>     
 
 		<!--- ********************************************************************************* --->
