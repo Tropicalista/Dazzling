@@ -43,7 +43,6 @@
                 <div class="tab-content">
 
                     <ul id="recent" class="tab-pane">#cb.widget('MyRecentEntries')#</ul>
-                    <ul id="messages" class="tab-pane"><li>Ciao</li></ul>
                     <ul id="popular-posts" class="tab-pane">#cb.widget('MyRecentEntries')#</ul>
 
                 </div>
