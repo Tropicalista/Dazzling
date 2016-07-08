@@ -1,44 +1,45 @@
 {
-    "name":"dazzling",
-    "version":"1.0.1",
+    "name":"Dazzling",
+    "version":"1.0.0",
+    "slug":"dazzling",
+    "location" : "https://github.com/Tropicalista/dazzling/archive/master.zip",
+    "directory":"",
+    "createPackageDirectory":true,
+    "packageDirectory":"",
     "author":"Francesco Pepe",
-    "location":"https://github.com/Tropicalista/dazzling",
-    "homepage":"https://github.com/Tropicalista/dazzling",
-    "documentation":"",
-    "packageDirectory":"dazzl",
+    "homepage":"http://www.tropicalseo.net",
+    "documentation":"https://github.com/Tropicalista/dazzling",
     "repository":{
         "type":"git",
         "URL":"https://github.com/Tropicalista/dazzling"
     },
     "bugs":"https://github.com/Tropicalista/dazzling/issues",
-    "slug":"dazzling",
-    "shortDescription":"A cool theme for ContentBox",
+    "shortDescription":"A cool ContentBox 3.0 theme",
+    "description":"",
+    "instructions":"",
+    "changelog":"",
     "type":"contentbox-themes",
-    "keywords":[
-        "corporate",
-        "blog",
-        "magazine"
-    ],
-    "private":false,
+    "projectURL":"",
     "license":[
         {
-            "type":"Apache2",
-            "URL":"http://www.apache.org/licenses/LICENSE-2.0"
+            "type":"GPL",
+            "URL":"http://www.gnu.org/licenses/gpl.html"
         }
     ],
-    "scripts":{
-        "postVersion":"package set location='https://github.com/Tropicalista/dazzling#v`package version`'",
-        "postPublish":"!git push && !git push --tags"
+    "contributors":[
+        
+    ],
+    "dependencies":{
+        
+    },
+    "devDependencies":{
+        
+    },
+    "installPaths":{
+        
     },
     "ignore":[
         "**/.*",
-        "test",
         "tests"
-    ],
-    "devDependencies":{
-        "testbox":"^2.3.0+00044"
-    },
-    "installPaths":{
-        "testbox":"testbox"
-    }
+    ]
 }
