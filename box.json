@@ -1,0 +1,43 @@
+{
+    "name":"dazzling",
+    "version":"1.0.1",
+    "author":"Francesco Pepe",
+    "location":"https://github.com/Tropicalista/dazzling",
+    "homepage":"https://github.com/Tropicalista/dazzling",
+    "documentation":"",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/Tropicalista/dazzling"
+    },
+    "bugs":"https://github.com/Tropicalista/dazzling/issues",
+    "slug":"dazzling",
+    "shortDescription":"A cool theme for ContentBox",
+    "type":"contentbox-themes",
+    "keywords":[
+        "corporate",
+        "blog",
+        "magazine"
+    ],
+    "private":false,
+    "license":[
+        {
+            "type":"MIT",
+            "URL":"https://raw.githubusercontent.com/Tropicalista/dazzling/master/LICENSE"
+        }
+    ],
+    "scripts":{
+        "postVersion":"package set location='https://github.com/Tropicalista/dazzling#v`package version`'",
+        "postPublish":"!git push && !git push --tags"
+    },
+    "ignore":[
+        "**/.*",
+        "test",
+        "tests"
+    ],
+    "devDependencies":{
+        "testbox":"^2.3.0+00044"
+    },
+    "installPaths":{
+        "testbox":"testbox"
+    }
+}
