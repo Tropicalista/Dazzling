@@ -5,6 +5,7 @@
     "location":"https://github.com/Tropicalista/dazzling",
     "homepage":"https://github.com/Tropicalista/dazzling",
     "documentation":"",
+    "packageDirectory":"dazzl",
     "repository":{
         "type":"git",
         "URL":"https://github.com/Tropicalista/dazzling"
@@ -21,8 +22,8 @@
     "private":false,
     "license":[
         {
-            "type":"MIT",
-            "URL":"https://raw.githubusercontent.com/Tropicalista/dazzling/master/LICENSE"
+            "type":"Apache2",
+            "URL":"http://www.apache.org/licenses/LICENSE-2.0"
         }
     ],
     "scripts":{
