@@ -56,8 +56,8 @@
 		<!--- ********************************************************************************* --->
 
 		<!--// Font Family //-->
-		<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
 
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 
