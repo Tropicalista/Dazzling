@@ -73,7 +73,7 @@
     </aside>
 
     <aside class="widget">
-        <form role="search" method="get" class="form-search" action="#cb.linkSearch()#">
+        <form role="search" method="get" class="form-search" action="#cb.linkSearch(event.getRequestContext().isSSL())#">
           <div class="input-group">
             <label class="screen-reader-text" for="q">Search for:</label>
             <input type="text" class="form-control search-query" placeholder="Search" value="" name="q" title="Search for:">
