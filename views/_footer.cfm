@@ -70,9 +70,9 @@
                 <!-- footer-nav -->
                 <nav role="navigation" class="col-md-6">
                     <ul id="menu-flat-footer" class="nav footer-nav clearfix">
-                        <li><a href="about">About</a></li>
+                        <li><a href="sitemap">Sitemap</a></li>
                         <li><a href="privacy">Privacy</a></li>
-                        <li><a href="contact">Contact</a></li>
+                        <li><a href="contatti">Contatti</a></li>
                     </ul>
                 </nav>
 

@@ -19,17 +19,6 @@
 	                        #prc.page.getTitle()#
 	                    </h1>
 	                	<small><a href="/">Home</a> #cb.breadCrumbs( separator="<i class='fa fa-angle-right'></i> " )#</small>
-	                    <div class="entry-meta">
-	                        <span class="posted-on"><i class="fa fa-calendar"></i> 
-	                            <time class="entry-date published" datetime="#prc.page.getDisplayPublishedDate()#">#prc.page.getDisplayPublishedDate()#</time>
-	                        </span>
-	                        <span class="">
-	                            <i class="fa fa-user"></i>
-	                            <span class="author vcard">
-	                                #prc.page.getAuthor().getUsername()#
-	                            </span>
-	                        </span>                       
-	                    </div>
 	                </header>
 	                <div class="entry-content">
 	                    <p>#prc.page.renderContent()#</p>
