@@ -24,9 +24,11 @@ component{
 		{ name="pinterest", 		defaultValue="", 		type="text", 		label="Pinterest link:" },
 		{ name="instagram", 		defaultValue="", 		type="text", 		label="Instagram link:" },
 		{ name="footerText", 		defaultValue="", 		type="textarea", 	label="Footer text:" },
-		{ name="footerSocial", 		defaultValue="false", 		type="boolean", 	label="Display social icons on footer:" },
-		{ name="footerWidget", 		defaultValue="false", 		type="boolean", 	label="Display widgets on footer:" },
-		{ name="sidebarSocial", 	defaultValue="false",	type="boolean", 	label="Display social icons on sidebar:" }
+		{ name="footerSocial", 		defaultValue="false", 	type="boolean", 	label="Display social icons on footer:" },
+		{ name="footerWidget", 		defaultValue="false", 	type="boolean", 	label="Display widgets on footer:" },
+		{ name="sidebarSocial", 	defaultValue="false",	type="boolean", 	label="Display social icons on sidebar:" },
+		{ name="showPopular", 		defaultValue="false",	type="boolean", 	label="Display popular section:" },
+		{ name="showTabbed", 		defaultValue="false",	type="boolean", 	label="Display tabbed popular section:" }
 	];
 
 	/**

@@ -1,7 +1,7 @@
 ﻿<cfoutput>
 <!--- View Arguments --->
 <cfparam name="args.print" 		default="false">
-<cfparam name="args.sidebar" 	default="true">
+<cfparam name="args.sidebar" 	default="false">
 <cfset maincol = args.sidebar ? "col-md-8" : "col-md-12">
 
 	<!--- Main Body --->
@@ -48,11 +48,15 @@
 
 		</div>
 
-			<cfif args.sidebar>
-				<div id="secondary" class="widget-area col-sm-12 col-md-4">
-					#cb.quickView(view='_blogsidebar')#
-				</div>
-			</cfif>
+		<div id="secondary" class="widget-area col-sm-12 col-md-4">
+			#cb.quickView(view='_pagesidebar')#
+		</div>
+
+		<cfif args.sidebar>
+			<div id="secondary" class="widget-area col-sm-12 col-md-4">
+				#cb.quickView(view='_blogsidebar')#
+			</div>
+		</cfif>
 
 			<!--- ContentBoxEvent --->
 			#cb.event("cbui_postPageDisplay")#

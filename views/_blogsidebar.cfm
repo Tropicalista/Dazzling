@@ -32,12 +32,24 @@
     </aside>
     </cfif>
 
+    <cfif cb.themeSetting( 'showTabbed' )>
+    <aside class="widget">
+        <form role="search" method="get" class="form-search" action="#cb.linkContentSearch(event.isSSL())#">
+          <div class="input-group">
+            <label class="screen-reader-text" for="q">Search for:</label>
+            <input type="text" class="form-control search-query" placeholder="Search" value="" name="q" title="Search for:">
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-default" name="submit" id="searchsubmit" value="Search" style=""><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+          </div>
+        </form>
+    </aside>
+
     <div class="widget tabbed">
             <div class="tabs-wrapper">
                 <ul class="nav nav-tabs">
                       <li><a href="##popular-posts" data-toggle="tab">Popular</a></li>
                       <li><a href="##recent" data-toggle="tab">Recent</a></li>
-                      <li><a href="##messages" data-toggle="tab"><i class="fa fa-comments tab-comment"></i></a></li>
                 </ul>
 
                 <div class="tab-content">
@@ -49,7 +61,9 @@
 
             </div>
     </div>
+    </cfif>
 
+    <cfif cb.themeSetting( 'showPopular' )>
     <aside class="widget">
         <h3 class="widget-title">Popular Posts</h3>
 
@@ -61,6 +75,7 @@
         </div> <!-- end posts wrapper -->
 
     </aside>
+    </cfif>
 
     <aside class="widget">
         <h3 class="widget-title">Categories</h3>
@@ -70,18 +85,6 @@
                 #cb.quickCategories()#
             </ul>
         </div><!-- end social icons -->
-    </aside>
-
-    <aside class="widget">
-        <form role="search" method="get" class="form-search" action="#cb.linkContentSearch(event.isSSL())#">
-          <div class="input-group">
-            <label class="screen-reader-text" for="q">Search for:</label>
-            <input type="text" class="form-control search-query" placeholder="Search" value="" name="q" title="Search for:">
-            <span class="input-group-btn">
-              <button type="submit" class="btn btn-default" name="submit" id="searchsubmit" value="Search" style=""><span class="glyphicon glyphicon-search"></span></button>
-            </span>
-          </div>
-        </form>
     </aside>
 
     <!-- end of sidebar -->
