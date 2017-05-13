@@ -1,4 +1,5 @@
-﻿<cfoutput>
+﻿<cfset prc.headerMainNav = cb.themeSetting( 'headerMainNav', 'none' )>
+<cfoutput>
 
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="container">
@@ -19,35 +20,38 @@
 
 
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
-					#cb.widget( "menu", {slug="topBar"} )#
-					<!---<ul class="nav navbar-nav">
-						<cfset menuData = cb.rootMenu( type="data", levels="2" )>
+					<cfif prc.headerMainNav is "none">
+						<ul class="nav navbar-nav">
+							<cfset menuData = cb.rootMenu( type="data", levels="2" )>
 
-						<!--- Iterate and build pages --->
-						<cfloop array="#menuData#" index="menuItem">
-							<cfif structKeyExists( menuItem, "subPageMenu" )>
-								<li class="dropdown">
-									<a href="#menuItem.link#" class="dropdown-toggle" data-toggle="dropdown">#menuItem.title# <b class="caret"></b></a>
-									#buildSubMenu( menuItem.subPageMenu )#
-								</li>
-							<cfelse>
-								<cfif cb.isPageView() AND event.buildLink( cb.getCurrentPage().getSlug() ) eq menuItem.link>
-									<li class="active">
+							<!--- Iterate and build pages --->
+							<cfloop array="#menuData#" index="menuItem">
+								<cfif structKeyExists( menuItem, "subPageMenu" )>
+									<li class="dropdown">
+										<a href="#menuItem.link#" class="dropdown-toggle" data-toggle="dropdown">#menuItem.title# <b class="caret"></b></a>
+										#buildSubMenu( menuItem.subPageMenu )#
+									</li>
 								<cfelse>
-									<li>
+									<cfif cb.isPageView() AND event.buildLink( cb.getCurrentPage().getSlug() ) eq menuItem.link>
+										<li class="active">
+									<cfelse>
+										<li>
+									</cfif>
+										<a href="#menuItem.link#">#menuItem.title#</a>
+									</li>
 								</cfif>
-									<a href="#menuItem.link#">#menuItem.title#</a>
+							</cfloop>
+
+							<!--- Blog Link, verify active --->
+							<cfif ( !prc.cbSettings.cb_site_disable_blog )>
+								<cfif cb.isBlogView()><li class="active"><cfelse><li></cfif>
+									<a href="#cb.linkBlog()#">Blog</a>
 								</li>
 							</cfif>
-						</cfloop>
-
-						<!--- Blog Link, verify active --->
-						<cfif ( !prc.cbSettings.cb_site_disable_blog )>
-							<cfif cb.isBlogView()><li class="active"><cfelse><li></cfif>
-								<a href="#cb.linkBlog()#">Blog</a>
-							</li>
-						</cfif>
-					</ul>--->
+						</ul>
+					<cfelse>
+						#cb.menu( prc.headerMainNav )#
+					</cfif>
 				</div>
 
 		</div>
