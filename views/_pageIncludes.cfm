@@ -1,22 +1,15 @@
 <cfoutput>
         <!-- meta -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<!--- Site Title --->
-		<title>
-		<cfif cb.isPageView()>
-			#cb.getCurrentPage().getTitle()#
-		<cfelse>
-			#cb.siteName()# - #cb.siteTagLine()#
-		</cfif>
-		</title>     
+		<title><cfif cb.isPageView()>#cb.getCurrentPage().getTitle()#<cfelse>#cb.siteName()# - #cb.siteTagLine()#</cfif></title>     
 
 		<!--- ********************************************************************************* --->
 		<!--- 					META TAGS														--->
 		<!--- ********************************************************************************* --->
-		<meta name="viewport" 		content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8" /> 
 
 		<!--- Meta Description By Page or By Site --->

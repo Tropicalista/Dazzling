@@ -48,10 +48,6 @@
 
 		</div>
 
-		<div id="secondary" class="widget-area col-sm-12 col-md-4">
-			#cb.quickView(view='_pagesidebar')#
-		</div>
-
 		<cfif args.sidebar>
 			<div id="secondary" class="widget-area col-sm-12 col-md-4">
 				#cb.quickView(view='_blogsidebar')#

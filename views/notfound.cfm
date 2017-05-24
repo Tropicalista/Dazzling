@@ -1,5 +1,5 @@
 ﻿<cfoutput>
-<div class="body-header-jumbotron jumbotron #cb.themeSetting( 'hpHeaderBg' )#-bg">
+<div class="body-header-jumbotron jumbotron">
 	<div class="container text-center">
 		<h1>
 			<i class="fa fa-ambulance"></i> 

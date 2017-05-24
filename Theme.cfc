@@ -11,7 +11,7 @@ component{
 	// Layout Variables
     this.name       	= "Dazzling";
 	this.description 	= "Dazzling theme by https://colorlib.com";
-	this.version		= "1.0.0";
+	this.version		= "1.0.1";
 	this.author 		= "Tropicalista";
 	this.authorURL		= "http://www.tropicalseo.net";
 	// Screenshot URL, can be absolute or locally in your layout package.
@@ -19,8 +19,9 @@ component{
 
 	// Layout Settings
 	this.settings = [
-		{ name="cbDazzlingTheme", 	defaultValue="Default",	type="select", 		label="Choose theme:",	required="false",	options="Default,Azure,Blue" },
-		{ name="headerMainNav", 	defaultValue="none", 	type="select", 		label="Main Navigation:", optionsUDF="menus", fieldDescription="Select a menu for the Main Navigation.",	group="Header"},
+		{ name="cbDazzlingTheme", 	defaultValue="Default",	type="select", 		label="Choose theme:",		required="false",	options="Default,Azure,Blue" },
+		{ name="rssDiscovery",		defaultValue="true",	type="boolean",		label="Show RSS:" },
+		{ name="headerMainNav", 	defaultValue="none", 	type="select", 		label="Main Navigation:",	optionsUDF="menus", fieldDescription="Select a menu for the Main Navigation.",	group="Header"},
 		{ name="facebook", 			defaultValue="", 		type="text", 		label="Facebook link:",		group="Header" },
 		{ name="google", 			defaultValue="", 		type="text", 		label="Google+ link:",		group="Header" },
 		{ name="twitter", 			defaultValue="", 		type="text", 		label="Twitter link:",		group="Header" },
