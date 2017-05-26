@@ -67,6 +67,4 @@
 		<script src="#cb.themeRoot()#/includes/js/0e06323b.theme.min.js"></script>
 		<!-- endinjector -->
 
-		<!--- ContentBoxEvent --->
-		#cb.event("cbui_beforeHeadEnd")#
 </cfoutput>

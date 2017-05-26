@@ -13,8 +13,8 @@ component extends="contentbox.models.ui.BaseWidget" singleton{
 		setDescription("A cool basic commenting form for ContentBox content objects.");
 		setAuthor("Tropicalista");
 		setAuthorURL("http://www.tropicalseo.net");
-		setIcon( "comment-add.png" );
-		setCategory( "Miscellaneous" );
+		setIcon( "comment-add" );
+
 		return this;
 	}
 
