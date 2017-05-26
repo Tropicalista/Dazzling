@@ -1,8 +1,8 @@
 {
     "name":"Dazzling",
-    "version":"1.3.0",
+    "version":"1.4.0",
     "slug":"dazzling",
-    "location":"https://github.com/Tropicalista/dazzling/archive/v1.3.0.zip",
+    "location":"https://github.com/Tropicalista/dazzling/archive/master.zip",
     "directory":"",
     "createPackageDirectory":true,
     "packageDirectory":"",
@@ -33,7 +33,7 @@
         
     },
     "scripts":{
-        "postVersion":"package set location='https://github.com/Tropicalista/dazzling/archive/v`package version`.zip'",
+        "postVersion":"package set location='https://github.com/Tropicalista/dazzling/archive/master.zip'",
         "onRelease":"publish",
         "postPublish":"!git push --tags"
     },
