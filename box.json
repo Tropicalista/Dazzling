@@ -1,8 +1,8 @@
 {
     "name":"Dazzling",
-    "version":"minor",
+    "version":"0.1.0",
     "slug":"dazzling",
-    "location":"https://github.com/Tropicalista/dazzling/archive/vminor.zip",
+    "location":"https://github.com/Tropicalista/dazzling/archive/v0.1.0.zip",
     "directory":"",
     "createPackageDirectory":true,
     "packageDirectory":"",
