@@ -23,7 +23,7 @@
         </header>
         
         <div class="entry-content">
-            <p>#prc.entry.renderContent()#</p>
+            #prc.entry.renderContent()#
         </div>
 
     </article> <!-- /.blog-item -->

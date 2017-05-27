@@ -11,7 +11,7 @@ component{
 	// Layout Variables
     this.name       	= "Dazzling";
 	this.description 	= "Dazzling theme by https://colorlib.com";
-	this.version		= "1.0.1";
+	this.version		= "1.3.0";
 	this.author 		= "Tropicalista";
 	this.authorURL		= "http://www.tropicalseo.net";
 	// Screenshot URL, can be absolute or locally in your layout package.

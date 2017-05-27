@@ -21,7 +21,7 @@
 	                	<small><a href="#cb.linkHome()#">Home</a> #cb.breadCrumbs( separator="<i class='fa fa-angle-right'></i> " )#</small>
 	                </header>
 	                <div class="entry-content">
-	                    <p>#prc.page.renderContent()#</p>
+	                    #prc.page.renderContent()#
 	                </div>
 
 			    </article> <!-- /.blog-item -->

@@ -35,7 +35,7 @@
     "scripts":{
         "postVersion":"package set location='https://github.com/Tropicalista/dazzling/archive/master.zip'",
         "onRelease":"publish",
-        "postPublish":"!git push --tags"
+        "postPublish":"!git push && !git push --tags"
     },
     "devDependencies":{
         
