@@ -52,7 +52,7 @@ component extends="contentbox.models.ui.BaseWidget" singleton{
 		// generate comment form
 		saveContent variable="contactForm"{
 			writeOutput('
-			<form name="contactForm" action ="#cb.linkSelf()#" novalidate="novalidate" method="post">
+			<form name="contactForm" action ="#cb.getContentURL()#" novalidate="novalidate" method="post">
 
 				#getModel( "messagebox@cbMessagebox" ).renderIt()#
 

@@ -31,14 +31,14 @@
 
 				    <div class="comments-area">
 				        <h2 class="comments-title">
-				            #len(prc.entry.getComments())# thoughts on #prc.entry.getTitle()#
+				            #len(prc.page.getComments())# thoughts on #prc.page.getTitle()#
 				        </h2>
 				        #cb.quickComments()#
 				    </div>
 
 				    <div id="respond" class="comment-respond">
 				        <h3 id="reply-title" class="comment-reply-title">Leave a Reply</h3>
-				        #cb.widget( "MyCommentForm",{content=#prc.entry#} )#
+				        #cb.widget( "MyCommentForm",{content=#prc.page#} )#
 				    </div>
 
 				</cfif>
